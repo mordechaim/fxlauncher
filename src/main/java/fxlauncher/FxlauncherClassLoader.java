@@ -10,9 +10,9 @@ import java.util.List;
 /**
  * Created by im on 22.02.17.
  */
-public class FxlauncherClassCloader extends URLClassLoader
+public class FxlauncherClassLoader extends URLClassLoader
 {
-    public FxlauncherClassCloader(ClassLoader parentClassLoader)
+    public FxlauncherClassLoader(ClassLoader parentClassLoader)
     {
         super(buildClasspath(System.getProperty("java.class.path")), parentClassLoader);
     }
